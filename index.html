@@ -3,110 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Política de Privacidade – Gestão Luvi</title>
+  <title>Políticas de Privacidade – Apps Luvi</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 32px 20px;
-      color: #222;
-      line-height: 1.7;
+      padding: 40px 20px;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
     }
-    h1 { font-size: 1.8rem; margin-bottom: 4px; }
-    h2 { font-size: 1.15rem; margin-top: 32px; color: #1a237e; }
-    p, li { font-size: 0.97rem; }
-    ul { padding-left: 20px; }
-    .updated { color: #888; font-size: 0.88rem; margin-bottom: 32px; }
-    a { color: #1a237e; }
+    h1 { font-size: 1.7rem; margin-bottom: 6px; }
+    .sub { color: #777; font-size: 0.95rem; margin-bottom: 32px; }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      border: 1px solid #e4e4e4;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .card:hover { border-color: #2E7D32; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .card h2 { font-size: 1.15rem; margin: 0 0 4px; }
+    .card p { margin: 0; color: #666; font-size: 0.9rem; }
+    .pkg { font-family: monospace; font-size: 0.82rem; color: #999; }
+    footer { margin-top: 36px; color: #999; font-size: 0.85rem; }
+    footer a { color: #2E7D32; }
   </style>
 </head>
 <body>
 
-  <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: 08 de maio de 2026</p>
+  <h1>Políticas de Privacidade</h1>
+  <p class="sub">Selecione o aplicativo para ver a política correspondente.</p>
 
-  <p>
-    Esta Política de Privacidade descreve como o aplicativo <strong>Gestão Luvi</strong>
-    (<code>com.luvistore.gestaoluvi</code>) coleta, usa e protege as informações dos usuários.
-    Ao utilizar o aplicativo, você concorda com as práticas descritas neste documento.
-  </p>
+  <a class="card" href="fit-luvi/">
+    <h2>Fit Luvi</h2>
+    <p>Organização de dieta e treino · <span class="pkg">com.luvi.fit</span></p>
+  </a>
 
-  <h2>1. Informações coletadas</h2>
-  <p>O aplicativo pode coletar as seguintes informações:</p>
-  <ul>
-    <li><strong>Dados de cadastro:</strong> e-mail e senha utilizados para autenticação.</li>
-    <li><strong>Dados de uso do negócio:</strong> informações inseridas pelo próprio usuário, como nome de clientes, telefone, CPF, produtos, vendas, mensalidades e contas a pagar/receber. Esses dados pertencem exclusivamente ao usuário.</li>
-    <li><strong>Dados do dispositivo:</strong> informações técnicas como identificador do dispositivo, sistema operacional e dados de conectividade, coletados automaticamente pelo Google AdMob para exibição de anúncios.</li>
-  </ul>
+  <a class="card" href="gestao-luvi/">
+    <h2>Gestão Luvi</h2>
+    <p>Gestão de negócios · <span class="pkg">com.luvistore.gestaoluvi</span></p>
+  </a>
 
-  <h2>2. Uso das informações</h2>
-  <p>As informações coletadas são utilizadas para:</p>
-  <ul>
-    <li>Autenticar o usuário e manter a sessão ativa;</li>
-    <li>Armazenar e sincronizar os dados do negócio na nuvem (Google Firestore);</li>
-    <li>Exibir anúncios relevantes por meio do Google AdMob;</li>
-    <li>Melhorar a experiência e a estabilidade do aplicativo.</li>
-  </ul>
+  <a class="card" href="privacy-policy-financeiro/">
+    <h2>Financeiro Luvi</h2>
+    <p>Controle financeiro pessoal · <span class="pkg">com.luvi.financeiro</span></p>
+  </a>
 
-  <h2>3. Compartilhamento de dados</h2>
-  <p>
-    Não vendemos nem compartilhamos seus dados pessoais com terceiros, exceto com os
-    seguintes prestadores de serviço necessários para o funcionamento do app:
-  </p>
-  <ul>
-    <li><strong>Google Firebase:</strong> autenticação e armazenamento de dados na nuvem.</li>
-    <li><strong>Google AdMob:</strong> exibição de anúncios. O AdMob pode coletar dados do dispositivo conforme sua própria
-      <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a>.
-    </li>
-  </ul>
-
-  <h2>4. Armazenamento e segurança</h2>
-  <p>
-    Os dados são armazenados de forma segura no Google Firebase, com autenticação obrigatória
-    para acesso. Adotamos práticas razoáveis de segurança para proteger suas informações contra
-    acesso não autorizado, alteração ou exclusão indevida.
-  </p>
-
-  <h2>5. Dados de crianças</h2>
-  <p>
-    O <strong>Gestão Luvi</strong> é destinado exclusivamente a usuários maiores de 18 anos,
-    para uso em gestão de negócios. Não coletamos intencionalmente dados de crianças menores
-    de 13 anos.
-  </p>
-
-  <h2>6. Direitos do usuário</h2>
-  <p>Você tem o direito de:</p>
-  <ul>
-    <li>Acessar, corrigir ou excluir seus dados pessoais;</li>
-    <li>Solicitar a portabilidade dos seus dados;</li>
-    <li>Revogar o consentimento para uso dos seus dados a qualquer momento.</li>
-  </ul>
-  <p>
-    Para exercer esses direitos, entre em contato pelo e-mail abaixo.
-  </p>
-
-  <h2>7. Anúncios e personalização</h2>
-  <p>
-    O aplicativo exibe anúncios fornecidos pelo Google AdMob. O Google pode usar cookies e
-    identificadores de dispositivo para exibir anúncios personalizados. Você pode optar por
-    não receber anúncios personalizados nas configurações de privacidade do seu dispositivo Android
-    em <em>Configurações → Google → Anúncios</em>.
-  </p>
-
-  <h2>8. Alterações nesta política</h2>
-  <p>
-    Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre mudanças
-    significativas por meio do próprio aplicativo. O uso continuado após as alterações implica
-    aceitação da nova versão.
-  </p>
-
-  <h2>9. Contato</h2>
-  <p>
-    Em caso de dúvidas sobre esta política ou sobre o tratamento dos seus dados, entre em contato:
-    <br/>
-    <strong>E-mail:</strong> <a href="mailto:lucasvg1007@gmail.com">lucasvg1007@gmail.com</a>
-  </p>
+  <footer>
+    Contato: <a href="mailto:lucasvg1007@gmail.com">lucasvg1007@gmail.com</a>
+  </footer>
 
 </body>
 </html>
