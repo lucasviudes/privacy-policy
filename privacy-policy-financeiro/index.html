@@ -16,103 +16,159 @@
     h1 { font-size: 1.8rem; margin-bottom: 4px; }
     h2 { font-size: 1.1rem; margin-top: 32px; margin-bottom: 8px; }
     p, li { font-size: 0.97rem; }
-    ul { padding-left: 20px; }
-    a { color: #1a237e; }
+    ul, ol { padding-left: 20px; }
+    a { color: #0D47A1; }
     .updated { color: #666; font-size: 0.9rem; margin-bottom: 28px; }
+    .destaque {
+      background: #F0F5FF;
+      border-left: 4px solid #0D47A1;
+      padding: 12px 16px;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
 
   <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: 16 de maio de 2026</p>
+  <p class="updated">Última atualização: 30 de setembro de 2026</p>
 
   <p>
     Esta Política de Privacidade descreve como o aplicativo <strong>Financeiro Luvi</strong>
-    (<code>com.luvi.financeiro</code>) coleta, usa e protege as informações dos usuários.
+    (<code>com.luvi.financeiro</code>) coleta, usa, armazena e protege as informações dos
+    usuários, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).
     Ao utilizar o aplicativo, você concorda com as práticas descritas neste documento.
+  </p>
+  <p>
+    <strong>Controlador dos dados:</strong> Lucas Viudes, desenvolvedor individual do aplicativo.
+    Contato: <a href="mailto:lucasvg1007@gmail.com">lucasvg1007@gmail.com</a>.
   </p>
 
   <h2>1. Informações coletadas</h2>
-  <p>O aplicativo pode coletar as seguintes informações:</p>
   <ul>
-    <li><strong>Dados de autenticação:</strong> e-mail utilizado para login via Google.</li>
-    <li><strong>Dados financeiros pessoais:</strong> informações inseridas pelo próprio usuário, como ganhos, despesas, provisões, parcelas e lançamentos de cartão de crédito. Esses dados pertencem exclusivamente ao usuário.</li>
-    <li><strong>Dados do dispositivo:</strong> informações técnicas como identificador do dispositivo, sistema operacional e dados de conectividade, coletados automaticamente pelo Google AdMob para exibição de anúncios.</li>
-    <li><strong>Dados de compra:</strong> informações de transação geradas pelo Google Play Billing ao adquirir a assinatura premium, processadas diretamente pelo Google.</li>
+    <li><strong>Dados de autenticação:</strong> nome, e-mail e foto de perfil da conta Google utilizada no login.</li>
+    <li><strong>Dados financeiros pessoais:</strong> informações inseridas pelo próprio usuário, como ganhos, despesas, provisões, parcelados, lançamentos de cartão de crédito, categorias (inclusive as criadas pelo usuário) e tetos de orçamento. Esses dados pertencem exclusivamente ao usuário.</li>
+    <li><strong>Preferências do aplicativo:</strong> tema, fonte, configurações de lembretes e do bloqueio do app. Ficam salvas apenas no próprio aparelho.</li>
+    <li><strong>Dados do dispositivo:</strong> informações técnicas como identificador de publicidade, sistema operacional e dados de conectividade, coletados automaticamente pelo Google AdMob para exibição de anúncios (somente para usuários sem assinatura Premium).</li>
+    <li><strong>Dados de compra:</strong> informações da transação geradas pelo Google Play Billing ao adquirir a assinatura Premium, processadas diretamente pelo Google.</li>
+    <li><strong>Mensagens de suporte:</strong> quando você usa a opção "Enviar sugestão", o aplicativo abre o seu próprio app de e-mail com a mensagem pronta. O conteúdo, os prints anexados e o seu endereço de e-mail só chegam até nós se você decidir enviar.</li>
   </ul>
 
-  <h2>2. Uso das informações</h2>
-  <p>As informações coletadas são utilizadas para:</p>
+  <h2>2. O que o aplicativo NÃO coleta</h2>
+  <div class="destaque">
+    <p style="margin:0">
+      <strong>Biometria:</strong> o recurso "Bloqueio do app" usa a digital, o reconhecimento
+      facial ou o PIN/padrão do celular. Essa verificação é feita inteiramente pelo sistema
+      Android. O aplicativo <strong>não tem acesso, não coleta, não armazena e não envia</strong>
+      nenhum dado biométrico nem a senha do aparelho — recebe apenas a confirmação de que a
+      verificação foi bem-sucedida.
+    </p>
+  </div>
+  <ul>
+    <li>Não acessamos contatos, localização, câmera, microfone, SMS ou arquivos do aparelho (exceto as imagens que você escolher anexar a uma sugestão).</li>
+    <li>Não temos acesso a contas bancárias nem a dados de cartão de crédito.</li>
+  </ul>
+
+  <h2>3. Uso das informações</h2>
   <ul>
     <li>Autenticar o usuário e manter a sessão ativa;</li>
-    <li>Armazenar e sincronizar os dados financeiros na nuvem (Google Firestore);</li>
-    <li>Exibir anúncios relevantes por meio do Google AdMob (somente para usuários sem assinatura premium);</li>
-    <li>Processar e validar a assinatura premium via Google Play Billing;</li>
+    <li>Armazenar e sincronizar os dados financeiros na nuvem (Google Firebase / Firestore), permitindo acessá-los em outro aparelho com a mesma conta;</li>
+    <li>Gerar, no próprio aplicativo, relatórios, gráficos e o acompanhamento do orçamento por categoria;</li>
+    <li>Agendar lembretes de vencimento. As notificações são criadas e exibidas <strong>localmente no aparelho</strong>, com a descrição e o valor da conta, e não são enviadas a nenhum servidor;</li>
+    <li>Exibir anúncios por meio do Google AdMob (somente para usuários sem assinatura Premium);</li>
+    <li>Processar e validar a assinatura Premium via Google Play Billing;</li>
+    <li>Responder sugestões e pedidos de suporte enviados por e-mail;</li>
     <li>Melhorar a experiência e a estabilidade do aplicativo.</li>
   </ul>
-
-  <h2>3. Compartilhamento de dados</h2>
   <p>
-    Não vendemos nem compartilhamos seus dados pessoais com terceiros, exceto com os
-    seguintes prestadores de serviço necessários para o funcionamento do app:
+    <strong>Bases legais (LGPD):</strong> execução do serviço solicitado pelo usuário (art. 7º, V),
+    consentimento (art. 7º, I) para anúncios personalizados e legítimo interesse (art. 7º, IX)
+    para segurança e melhoria do aplicativo.
+  </p>
+
+  <h2>4. Compartilhamento de dados</h2>
+  <p>
+    Não vendemos nem compartilhamos seus dados pessoais com terceiros, exceto com os seguintes
+    prestadores de serviço necessários para o funcionamento do app:
   </p>
   <ul>
-    <li><strong>Google Firebase:</strong> autenticação e armazenamento de dados na nuvem.</li>
-    <li><strong>Google AdMob:</strong> exibição de anúncios para usuários sem assinatura premium. O AdMob pode coletar dados do dispositivo conforme sua própria <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a>.</li>
-    <li><strong>Google Play Billing:</strong> processamento de pagamentos da assinatura premium. Os dados financeiros da transação são gerenciados pelo Google conforme os <a href="https://pay.google.com/about/terms/" target="_blank">Termos de Serviço do Google Pay</a>.</li>
+    <li><strong>Google Firebase:</strong> autenticação e armazenamento dos dados na nuvem.</li>
+    <li><strong>Google AdMob:</strong> exibição de anúncios para usuários sem assinatura Premium. O AdMob pode coletar dados do dispositivo conforme a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</li>
+    <li><strong>Google Play Billing:</strong> processamento de pagamentos da assinatura Premium, conforme os <a href="https://pay.google.com/about/terms/" target="_blank">Termos de Serviço do Google Pay</a>.</li>
+  </ul>
+  <p>Os serviços do Google podem armazenar dados em servidores fora do Brasil, com as garantias de proteção previstas em seus próprios termos.</p>
+
+  <h2>5. Armazenamento e segurança</h2>
+  <ul>
+    <li>Os dados financeiros ficam no Google Firebase, vinculados à sua conta e acessíveis somente mediante login.</li>
+    <li>Uma cópia é mantida no aparelho para funcionamento sem internet. Ao entrar com outra conta, essa cópia é apagada.</li>
+    <li>Por segurança, após 30 minutos sem uso o aplicativo encerra a sessão.</li>
+    <li>O usuário Premium pode ativar o bloqueio do app com biometria ou PIN do celular.</li>
   </ul>
 
-  <h2>4. Armazenamento e segurança</h2>
+  <h2>6. Dados de crianças</h2>
   <p>
-    Os dados são armazenados de forma segura no Google Firebase, com autenticação obrigatória
-    para acesso. Adotamos práticas razoáveis de segurança para proteger suas informações contra
-    acesso não autorizado, alteração ou exclusão indevida.
+    O <strong>Financeiro Luvi</strong> é destinado a usuários maiores de 18 anos, para controle
+    financeiro pessoal. Não coletamos intencionalmente dados de menores de 18 anos. Caso
+    identifiquemos esse tipo de dado, ele será excluído.
   </p>
 
-  <h2>5. Dados de crianças</h2>
-  <p>
-    O <strong>Financeiro Luvi</strong> é destinado exclusivamente a usuários maiores de 18 anos
-    para controle financeiro pessoal. Não coletamos intencionalmente dados de crianças
-    menores de 13 anos.
-  </p>
-
-  <h2>6. Direitos do usuário</h2>
-  <p>Você tem o direito de:</p>
+  <h2>7. Direitos do usuário</h2>
+  <p>Conforme a LGPD, você pode:</p>
   <ul>
-    <li>Acessar, corrigir ou excluir seus dados pessoais;</li>
+    <li>Confirmar a existência de tratamento e acessar seus dados;</li>
+    <li>Corrigir dados incompletos ou desatualizados (diretamente no aplicativo);</li>
+    <li>Solicitar a exclusão dos seus dados e da sua conta;</li>
     <li>Solicitar a portabilidade dos seus dados;</li>
-    <li>Revogar o consentimento para uso dos seus dados a qualquer momento.</li>
+    <li>Revogar o consentimento a qualquer momento.</li>
   </ul>
-  <p>Para exercer esses direitos, entre em contato pelo e-mail abaixo.</p>
+  <p>Para exercer esses direitos, entre em contato pelo e-mail informado ao final. Respondemos em até 15 dias.</p>
 
-  <h2>7. Anúncios e personalização</h2>
+  <h2 id="exclusao-de-conta">8. Exclusão de dados e da conta</h2>
+  <p><strong>Apagar os dados financeiros pelo aplicativo:</strong></p>
+  <ol>
+    <li>Na tela inicial, toque no menu <strong>⋮</strong> (canto superior direito);</li>
+    <li>Escolha <strong>Apagar todos os dados</strong> e confirme.</li>
+  </ol>
   <p>
-    O aplicativo exibe anúncios fornecidos pelo Google AdMob apenas para usuários sem
-    assinatura premium. O Google pode usar cookies e identificadores de dispositivo para
-    exibir anúncios personalizados. Você pode optar por não receber anúncios personalizados
-    nas configurações do seu dispositivo Android em
-    <em>Configurações → Google → Anúncios</em>.
+    Isso apaga todos os lançamentos (ganhos, despesas, cartões, provisões e parcelados) do
+    aparelho e da nuvem.
+  </p>
+  <p><strong>Excluir a conta por completo:</strong></p>
+  <ol>
+    <li>Envie um e-mail para <a href="mailto:lucasvg1007@gmail.com?subject=Excluir%20conta%20-%20Financeiro%20Luvi">lucasvg1007@gmail.com</a> com o assunto <em>"Excluir conta – Financeiro Luvi"</em>, a partir do mesmo e-mail usado no login;</li>
+    <li>Em até 15 dias, excluímos sua conta e todos os dados associados (lançamentos, categorias, orçamento e registro de login) e confirmamos por e-mail.</li>
+  </ol>
+  <p>
+    Dados de compra da assinatura são mantidos pelo Google conforme as regras dele e as
+    obrigações legais. Para cancelar a assinatura, use a Google Play antes de pedir a exclusão.
   </p>
 
-  <h2>8. Assinatura Premium</h2>
+  <h2>9. Anúncios e personalização</h2>
   <p>
-    O aplicativo oferece uma assinatura mensal opcional (premium) processada pelo
-    Google Play Billing. O cancelamento pode ser feito a qualquer momento diretamente
-    nas configurações da sua conta Google Play. Não armazenamos dados de cartão de crédito
-    ou informações de pagamento — todo o processamento é feito pelo Google.
+    O aplicativo exibe anúncios do Google AdMob apenas para usuários sem assinatura Premium.
+    O Google pode usar identificadores do dispositivo para exibir anúncios personalizados.
+    Você pode desativar a personalização em <em>Configurações → Google → Anúncios</em> no seu
+    Android.
   </p>
 
-  <h2>9. Alterações nesta política</h2>
+  <h2>10. Assinatura Premium</h2>
   <p>
-    Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre
-    mudanças significativas por meio do próprio aplicativo. O uso continuado após as
-    alterações implica aceitação da nova versão.
+    O aplicativo oferece uma assinatura mensal opcional (Premium), processada pelo Google Play
+    Billing, que remove os anúncios e libera recursos extras (relatórios, orçamento por
+    categoria, lembretes personalizados, bloqueio do app, temas e fontes). O cancelamento pode
+    ser feito a qualquer momento nas configurações da sua conta Google Play. Não armazenamos
+    dados de cartão de crédito nem informações de pagamento.
   </p>
 
-  <h2>10. Contato</h2>
+  <h2>11. Alterações nesta política</h2>
   <p>
-    Em caso de dúvidas sobre esta política ou sobre o tratamento dos seus dados,
-    entre em contato:<br />
+    Podemos atualizar esta Política de Privacidade periodicamente. Mudanças relevantes serão
+    comunicadas pelo próprio aplicativo. A data no topo indica a versão em vigor.
+  </p>
+
+  <h2>12. Contato</h2>
+  <p>
+    Dúvidas sobre esta política ou sobre o tratamento dos seus dados:<br />
     <strong>E-mail:</strong> <a href="mailto:lucasvg1007@gmail.com">lucasvg1007@gmail.com</a>
   </p>
 
